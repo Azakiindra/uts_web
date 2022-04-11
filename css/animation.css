@@ -1,0 +1,31 @@
+.anim-1:hover {
+    animation: a_rotate 1s;
+    animation-direction: alternate;
+}
+
+@keyframes a_rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    30% {
+        transform: rotateY(-30deg);
+    }
+}
+
+table td:hover>ul,
+table td:focus-within>ul,
+table td ul:hover,
+table td ul:focus {
+    animation: a_transparant 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes a_transparant {
+    0% {
+        opacity: 0;
+        transform: rotateY(-30deg);
+    }
+    30% {
+        opacity: 1;
+    }
+}

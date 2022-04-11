@@ -1,0 +1,117 @@
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/background.png);
+}
+
+.row {
+    width: 90vw;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.column {
+    width: 100%;
+}
+
+.td-style {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 72%;
+    font-weight: bold;
+}
+
+.table-style {
+    background-color: #ff0000;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.nav-top:hover,
+.nav-top:active {
+    background-color: #00000038;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+    font-size: 80%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*coba*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li:hover,
+li:focus-within {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.308);
+    cursor: pointer;
+}
+
+li a {
+    color: #fff;
+}
+
+li:hover>a {
+    color: #e0e0e0;
+}
+
+table td ul {
+    visibility: hidden;
+    opacity: 0;
+    align-items: center;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+table td:hover>ul,
+table td:focus-within>ul,
+table td ul:hover,
+table td ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.dropdown-style {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+/*make a beautiful footer*/
+
+footer {
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    margin-left: -0.5%;
+}
